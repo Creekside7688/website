@@ -1,0 +1,40 @@
+'use client';
+
+import activities from '../../data/activities.json';
+
+export default function About() {
+    return (
+        <section id="about" className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-[#1e2330]">
+            <div className="max-w-7xl mx-auto">
+                <h2 className="text-4xl font-bold text-center mb-4 text-white title-font">ABOUT</h2>
+                <div className="w-1/2 h-px bg-white/60 mx-auto mb-12"></div>
+
+                {/* FIRST Competition Section */}
+                <div className="grid lg:grid-cols-2 gap-12 mb-16">
+                    <div className="flex items-center justify-center">
+                        <div className="w-48 h-48 bg-white rounded flex items-center justify-center">
+                            <span className="text-6xl font-bold text-gray-900">FIRST</span>
+                        </div>
+                    </div>
+                    <div className="flex items-center">
+                        <div>
+                            <h3 className="text-3xl font-bold mb-4 text-white">FIRST Robotics Competition</h3>
+                            <p className="text-lg text-gray-300 mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p className="text-lg text-gray-300 mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p className="text-lg text-gray-300">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p className="text-sm text-gray-500/60 mt-6 tracking-wider text-center">
+                    {activities.join(' / ')}
+                </p>
+            </div>
+        </section>
+    );
+}
