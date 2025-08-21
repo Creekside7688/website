@@ -32,7 +32,7 @@ interface YearData {
 }
 
 export default function Gallery() {
-    const [activeYear, setActiveYear] = useState('2018-2019');
+    const [activeYear, setActiveYear] = useState('2024-2025');
     const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
     const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
     const [lightboxOpen, setLightboxOpen] = useState(false);

@@ -10,9 +10,9 @@ const galleryConfig = [
     mediaFolder: 'media19',
     folderMappings: [
       { folderNames: '', displayName: '' },
-      { folderNames: 'Build Season', displayName: 'BUILD SEASON' },
-      { folderNames: 'Competition Photos', displayName: 'COMPETITION SEASON' },
-      { folderNames: 'Random Photos', displayName: 'RANDOM PHOTOS' }
+      { folderNames: 'Build_Season', displayName: 'BUILD SEASON' },
+      { folderNames: 'Competition_Photos', displayName: 'COMPETITION SEASON' },
+      { folderNames: 'Random_Photos', displayName: 'RANDOM PHOTOS' }
     ]
   },
   {
@@ -21,7 +21,7 @@ const galleryConfig = [
     mediaFolder: 'media20',
     folderMappings: [
       { folderNames: '', displayName: '' },
-      { folderNames: 'UBC ROCKET EVENT', displayName: 'UBC ROCKET EVENT' }
+      { folderNames: 'UBC_ROCKET_EVENT', displayName: 'UBC ROCKET EVENT' }
     ]
   },
   {
@@ -38,7 +38,7 @@ const galleryConfig = [
     mediaFolder: 'media22',
     folderMappings: [
       { folderNames: '', displayName: '' },
-      { folderNames: 'Cellula trip', displayName: 'CELLULA TRIP' },
+      { folderNames: 'Cellula_trip', displayName: 'CELLULA TRIP' },
     ]
   },
   {
@@ -47,7 +47,7 @@ const galleryConfig = [
     mediaFolder: 'media23',
     folderMappings: [
       { folderNames: '', displayName: '' },
-      { folderNames: 'Build Season', displayName: 'BUILD SEASON' },
+      { folderNames: 'Build_Season', displayName: 'BUILD SEASON' },
       { folderNames: 'Competition', displayName: 'COMPETITION SEASON' },
       { folderNames: 'Translink', displayName: 'TRANSLINK TOUR' },
       { folderNames: 'YVR', displayName: 'YVR TOUR' }
@@ -59,11 +59,11 @@ const galleryConfig = [
     mediaFolder: 'media24',
     folderMappings: [
       { folderNames: '', displayName: '' },
-      { folderNames: 'Pre Season', displayName: 'PRE SEASON' },
-      { folderNames: 'Build Season', displayName: 'BUILD SEASON' },
-      { folderNames: 'Competition Season', displayName: 'COMPETITION SEASON' },
-      { folderNames: 'Off Season', displayName: 'OFF SEASON' },
-      { folderNames: ['Selected Photos', 'The 20 photos', 'edited and chosen photos (for sponsorship package)'], displayName: 'MISCELLANEOUS' },
+      { folderNames: 'Pre_Season', displayName: 'PRE SEASON' },
+      { folderNames: 'Build_Season', displayName: 'BUILD SEASON' },
+      { folderNames: 'Competition_Season', displayName: 'COMPETITION SEASON' },
+      { folderNames: 'Off_Season', displayName: 'OFF SEASON' },
+      { folderNames: ['Selected_Photos', 'The_20_photos', 'edited_and_chosen_photos_(for_sponsorship_package)'], displayName: 'MISCELLANEOUS' },
     ]
   },
   {
@@ -72,10 +72,10 @@ const galleryConfig = [
     mediaFolder: 'media25',
     folderMappings: [
       { folderNames: '', displayName: '' },
-      { folderNames: 'Pre Season', displayName: 'PRE SEASON' },
-      { folderNames: 'Build Season', displayName: 'BUILD SEASON' },
-      { folderNames: ['Competition Season', 'Competition (Camera)', 'Colour Graded'], displayName: 'COMPETITION SEASON' },
-      { folderNames: 'Post Season', displayName: 'POST SEASON' },
+      { folderNames: 'Pre_Season', displayName: 'PRE SEASON' },
+      { folderNames: 'Build_Season', displayName: 'BUILD SEASON' },
+      { folderNames: ['Competition_Season', 'Competition_(Camera)', 'Colour_Graded'], displayName: 'COMPETITION SEASON' },
+      { folderNames: 'Post_Season', displayName: 'POST SEASON' },
       // Example of multiple folders under one header:
       // { folderNames: ['Team Photos', 'Workshops', 'Outreach'], displayName: 'Team Activities' }
     ]
