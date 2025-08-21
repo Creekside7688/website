@@ -3,12 +3,9 @@ import Image from 'next/image';
 interface SponsorProps {
     name: string;
     logo: string;
-    website?: string;
-    tierColor: string;
-    tierBorderColor: string;
 }
 
-export default function Sponsor({ name, logo, website, tierColor, tierBorderColor }: SponsorProps) {
+export default function Sponsor({ name, logo }: SponsorProps) {
     return (
         <div className="p-4 rounded-lg bg-[#2a3441] hover:scale-105 transition-all duration-300">
             <div className="flex items-center justify-center">

@@ -1,5 +1,5 @@
 import SponsorTier from './SponsorTier';
-import sponsorData from '../../data/sponsors.json';
+import sponsorData from '../../data/sponsors';
 
 interface SponsorListProps {
     title?: string;
@@ -23,10 +23,10 @@ export default function SponsorList({
                 {tiers.map((tier, tierIndex) => (
                     <SponsorTier
                         key={tierIndex}
-                        name={tier.name}
-                        color={tier.color}
-                        borderColor={tier.borderColor}
-                        sponsors={tier.sponsors}
+                        name={tier.name || ''}
+                        color={tier.color || ''}
+                        borderColor={tier.borderColor || ''}
+                        sponsors={tier.sponsors || []}
                         showTierHeader={showTierHeaders}
                     />
                 ))}

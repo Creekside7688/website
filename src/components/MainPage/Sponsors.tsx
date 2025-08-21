@@ -7,8 +7,8 @@ export default function Sponsors() {
         <section id="sponsors" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#1e2330]">
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold mb-4 text-white title-font">SPONSORS</h2>
-                    <p className="text-xl text-gray-300">We're grateful for the support of our amazing sponsors</p>
+                    <h2 className="text-5xl font-bold mb-4 text-white title-font">SPONSORS</h2>
+                    <p className="text-xl text-gray-300">We&apos;re grateful for the support of our amazing sponsors</p>
                 </div>
                 <SponsorList showTitle={false} />
                 <div className="text-center mt-8">

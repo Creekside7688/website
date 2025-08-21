@@ -1,13 +1,13 @@
 'use client';
 
-import upcomingEvents from '../../data/upcoming-events.json';
-import achievements from '../../data/achievements.json';
+import upcomingEvents from '../../data/upcoming-events';
+import achievements from '../../data/achievements';
 
 export default function EventsAchievements() {
     return (
         <section id="upcoming" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-[#1e2330] py-20">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-4xl font-bold text-center mb-4 text-white title-font">EVENTS & ACHIEVEMENTS</h2>
+                <h2 className="text-5xl font-bold text-center mb-4 text-white title-font">EVENTS & ACHIEVEMENTS</h2>
                 <div className="w-1/2 h-px bg-white/60 mx-auto mb-12"></div>
                 <div className="grid lg:grid-cols-2 gap-12">
                     {/* Upcoming Events */}

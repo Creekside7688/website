@@ -1,0 +1,33 @@
+export interface UpcomingEvent {
+  title: string;
+  date: string;
+  location: string;
+  action: string;
+  actionType: "button" | "text";
+}
+
+export const upcomingEvents: UpcomingEvent[] = [
+  {
+    title: "Regional Competition",
+    date: "March 15-17, 2024",
+    location: "Regional Convention Center",
+    action: "Register",
+    actionType: "button"
+  },
+  {
+    title: "State Championship",
+    date: "April 5-7, 2024",
+    location: "State University Arena",
+    action: "TBD",
+    actionType: "text"
+  },
+  {
+    title: "Team Practice",
+    date: "Every Saturday, 9:00 AM",
+    location: "High School Robotics Lab",
+    action: "Open",
+    actionType: "text"
+  }
+];
+
+export default upcomingEvents;

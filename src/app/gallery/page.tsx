@@ -48,7 +48,7 @@ export default function Gallery() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+            <section className="pt-32 pb-5 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white title-font">
                         GALLERY
@@ -60,7 +60,7 @@ export default function Gallery() {
             </section>
 
             {/* Category Filter */}
-            <section className="py-8 px-4 sm:px-6 lg:px-8">
+            <section className="py-0 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-wrap justify-center gap-4">
                         {categories.map((category) => (

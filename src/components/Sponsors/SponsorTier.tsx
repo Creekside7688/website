@@ -26,7 +26,7 @@ export default function SponsorTier({
             {showTierHeader && (
                 <div className="text-center">
                     <h3 className={`text-2xl font-bold ${color} mb-2`}>
-                        {name} Sponsors
+                        {name}
                     </h3>
                     <div className={`w-24 h-1 ${color} mx-auto rounded-full`}></div>
                 </div>
@@ -37,9 +37,6 @@ export default function SponsorTier({
                         key={index}
                         name={sponsor.name}
                         logo={sponsor.logo}
-                        website={sponsor.website}
-                        tierColor={color}
-                        tierBorderColor={borderColor}
                     />
                 ))}
             </div>

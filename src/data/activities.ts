@@ -1,4 +1,4 @@
-[
+export const activities: string[] = [
   "PHOTOGRAPHY",
   "CONTROL SYSTEMS",
   "LEADERSHIP",
@@ -27,4 +27,6 @@
   "BUSINESS",
   "TESTING",
   "STEM"
-]
+];
+
+export default activities;

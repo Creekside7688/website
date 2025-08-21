@@ -27,7 +27,7 @@ export default function Resources() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+            <section className="pt-32 pb-5 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white title-font">
                         RESOURCES
@@ -39,7 +39,7 @@ export default function Resources() {
             </section>
 
             {/* Resources Section */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8">
+            <section className="py-0 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="p-8 rounded-lg border border-gray-700 hover:border-blue-500 transition-colors duration-200 bg-[#2a3441]">

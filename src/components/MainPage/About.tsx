@@ -1,20 +1,19 @@
 'use client';
 
-import activities from '../../data/activities.json';
+import activities from '../../data/activities';
+import Image from 'next/image';
 
 export default function About() {
     return (
         <section id="about" className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-[#1e2330]">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-4xl font-bold text-center mb-4 text-white title-font">ABOUT</h2>
+                <h2 className="text-5xl font-bold text-center mb-4 text-white title-font">ABOUT</h2>
                 <div className="w-1/2 h-px bg-white/60 mx-auto mb-12"></div>
 
                 {/* FIRST Competition Section */}
                 <div className="grid lg:grid-cols-2 gap-12 mb-16">
                     <div className="flex items-center justify-center">
-                        <div className="w-48 h-48 bg-white rounded flex items-center justify-center">
-                            <span className="text-6xl font-bold text-gray-900">FIRST</span>
-                        </div>
+                        <Image src="/first-logo.png" alt="FIRST Robotics Competition" width={400} height={400} />
                     </div>
                     <div className="flex items-center">
                         <div>
