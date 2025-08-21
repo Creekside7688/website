@@ -8,8 +8,9 @@ export default function Hero() {
         }
     };
     return (
-        <section id="home" className="h-screen flex items-center px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto w-full flex items-center justify-between gap-16 lg:gap-32">
+        <section id="home" className="h-screen flex items-center px-4 sm:px-6 lg:px-8 relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/team.jpg)' }}>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1e2330] via-[#1e2330]/50 to-transparent"></div>
+            <div className="relative z-10 max-w-7xl mx-auto w-full flex items-center justify-between gap-16 lg:gap-32">
                 <div className="text-center md:text-left">
                     <div className="mb-8">
                         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white title-font">

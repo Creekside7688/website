@@ -6,13 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "optimize-images": "node scripts/optimize-images.js",
+    "convert-heic": "node scripts/convert-heic.js",
+    "convert-webp": "node scripts/convert-webp.js",
+    "create-thumbnails": "node scripts/create-thumbnails.js",
+    "generate-gallery": "node scripts/generate-gallery-data.js",
+    "build-gallery": "npm run generate-gallery && npm run build"
   },
   "dependencies": {
     "animejs": "^4.1.3",
     "next": "15.5.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

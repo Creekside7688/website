@@ -77,7 +77,7 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-                    <p className="text-gray-400">© 2024 Creekside Robotics (Team 7688). All rights reserved.</p>
+                    <p className="text-gray-400">© 2025 FRC Team 7688 Creekside Robotics. All rights reserved.</p>
                 </div>
             </div>
         </footer>
