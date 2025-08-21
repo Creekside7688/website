@@ -2,9 +2,18 @@
 
 import { useState, useEffect } from 'react';
 
+interface GalleryImage {
+    src: string;
+    alt: string;
+    category: string;
+    subfolder: string;
+    filename: string;
+    fullSizeSrc: string;
+}
+
 interface SubfolderData {
     name: string;
-    images: any[];
+    images: GalleryImage[];
     count: number;
 }
 
@@ -12,7 +21,7 @@ interface YearData {
     id: string;
     label: string;
     subfolders: SubfolderData[];
-    rootImages?: any[];
+    rootImages?: GalleryImage[];
     totalImages: number;
 }
 
