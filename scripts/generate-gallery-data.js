@@ -91,6 +91,16 @@ function generateGalleryData() {
                         ? `/media-converted/${yearConfig.mediaFolder}/${file}`
                         : `/media-converted/${yearConfig.mediaFolder}/${actualFolderName}/${file}`;
                     
+                    // Check if full-size image exists
+                    const fullSizePath = actualFolderName === ''
+                        ? path.join(yearFullSizePath, file)
+                        : path.join(yearFullSizePath, actualFolderName, file);
+                    
+                    if (!fs.existsSync(fullSizePath)) {
+                        console.log(`⚠️  Full-size image not found, skipping: ${fullSizePath}`);
+                        return null;
+                    }
+                    
                     return {
                         src: thumbnailSrc,
                         fullSizeSrc,
@@ -100,7 +110,7 @@ function generateGalleryData() {
                         subfolder: actualFolderName || 'root',
                         displayName: folderMapping.displayName
                     };
-                });
+                }).filter(image => image !== null); // Remove null entries
 
                 allImages = allImages.concat(images);
                 totalCount += images.length;

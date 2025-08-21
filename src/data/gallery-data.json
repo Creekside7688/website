@@ -4713,69 +4713,6 @@
       ],
       "rootImages": [
         {
-          "src": "/media-thumbnails/media22/IMG_20211125_153411.webp",
-          "fullSizeSrc": "/media-converted/media22/IMG_20211125_153411.webp",
-          "alt": "IMG_20211125_153411",
-          "filename": "IMG_20211125_153411.webp",
-          "category": "2021-2022",
-          "subfolder": "root",
-          "displayName": ""
-        },
-        {
-          "src": "/media-thumbnails/media22/IMG_20211125_153421.webp",
-          "fullSizeSrc": "/media-converted/media22/IMG_20211125_153421.webp",
-          "alt": "IMG_20211125_153421",
-          "filename": "IMG_20211125_153421.webp",
-          "category": "2021-2022",
-          "subfolder": "root",
-          "displayName": ""
-        },
-        {
-          "src": "/media-thumbnails/media22/IMG_20211125_153423.webp",
-          "fullSizeSrc": "/media-converted/media22/IMG_20211125_153423.webp",
-          "alt": "IMG_20211125_153423",
-          "filename": "IMG_20211125_153423.webp",
-          "category": "2021-2022",
-          "subfolder": "root",
-          "displayName": ""
-        },
-        {
-          "src": "/media-thumbnails/media22/IMG_20211125_153426.webp",
-          "fullSizeSrc": "/media-converted/media22/IMG_20211125_153426.webp",
-          "alt": "IMG_20211125_153426",
-          "filename": "IMG_20211125_153426.webp",
-          "category": "2021-2022",
-          "subfolder": "root",
-          "displayName": ""
-        },
-        {
-          "src": "/media-thumbnails/media22/IMG_20211125_153513.webp",
-          "fullSizeSrc": "/media-converted/media22/IMG_20211125_153513.webp",
-          "alt": "IMG_20211125_153513",
-          "filename": "IMG_20211125_153513.webp",
-          "category": "2021-2022",
-          "subfolder": "root",
-          "displayName": ""
-        },
-        {
-          "src": "/media-thumbnails/media22/IMG_20211125_153515.webp",
-          "fullSizeSrc": "/media-converted/media22/IMG_20211125_153515.webp",
-          "alt": "IMG_20211125_153515",
-          "filename": "IMG_20211125_153515.webp",
-          "category": "2021-2022",
-          "subfolder": "root",
-          "displayName": ""
-        },
-        {
-          "src": "/media-thumbnails/media22/IMG_20211125_153517.webp",
-          "fullSizeSrc": "/media-converted/media22/IMG_20211125_153517.webp",
-          "alt": "IMG_20211125_153517",
-          "filename": "IMG_20211125_153517.webp",
-          "category": "2021-2022",
-          "subfolder": "root",
-          "displayName": ""
-        },
-        {
           "src": "/media-thumbnails/media22/IMG_20211125_153519.webp",
           "fullSizeSrc": "/media-converted/media22/IMG_20211125_153519.webp",
           "alt": "IMG_20211125_153519",
@@ -4785,7 +4722,7 @@
           "displayName": ""
         }
       ],
-      "totalImages": 79
+      "totalImages": 72
     },
     {
       "id": "2022-2023",
@@ -15314,5 +15251,5 @@
       "totalImages": 340
     }
   ],
-  "lastUpdated": "2025-08-21T05:13:27.505Z"
+  "lastUpdated": "2025-08-21T05:20:06.248Z"
 }
