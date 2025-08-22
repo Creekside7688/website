@@ -37,6 +37,7 @@ export default function SponsorTier({
                         key={index}
                         name={sponsor.name}
                         logo={sponsor.logo}
+                        website={sponsor.website}
                     />
                 ))}
             </div>

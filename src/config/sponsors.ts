@@ -45,19 +45,19 @@ const sponsorsData: SponsorsConfig = {
       borderColor: "border-yellow-400",
       sponsors: [
         {
-          name: "Engineering Solutions",
-          logo: "/placeholder-logo.png",
-          website: "https://engineeringsolutions.com"
+          name: "Gene Haas Foundation",
+          logo: "/sponsors/haas.png",
+          website: "https://www.ghaasfoundation.org"
         },
         {
-          name: "Advanced Manufacturing",
-          logo: "/placeholder-logo.png",
-          website: "https://advancedmanufacturing.com"
+          name: "Burnaby SD41",
+          logo: "/sponsors/sd41.png",
+          website: "https://burnabyschools.ca"
         },
         {
-          name: "Precision Tools Inc",
-          logo: "/placeholder-logo.png",
-          website: "https://precisiontools.com"
+          name: "Conwest Developments",
+          logo: "/sponsors/conwest.png",
+          website: "https://conwest.com"
         }
       ]
     },
@@ -67,24 +67,19 @@ const sponsorsData: SponsorsConfig = {
       borderColor: "border-gray-300",
       sponsors: [
         {
-          name: "Innovation Labs",
-          logo: "/placeholder-logo.png",
-          website: "https://innovationlabs.com"
+          name: "Motorola Solutions",
+          logo: "/sponsors/motorola.png",
+          website: "https://www.motorolasolutions.com"
         },
         {
-          name: "Tech Solutions",
-          logo: "/placeholder-logo.png",
-          website: "https://techsolutions.com"
+          name: "Byrne Creek Community School",
+          logo: "/sponsors/byrnecreek.png",
+          website: "https://byrnecreek.burnabyschools.ca"
         },
         {
-          name: "Digital Dynamics",
-          logo: "/placeholder-logo.png",
-          website: "https://digitaldynamics.com"
-        },
-        {
-          name: "Smart Systems",
-          logo: "/placeholder-logo.png",
-          website: "https://smartsystems.com"
+          name: "Lavender Family",
+          logo: "/sponsors/sd41.png",
+          website: "https://burnabyschools.ca"
         }
       ]
     },
@@ -94,29 +89,14 @@ const sponsorsData: SponsorsConfig = {
       borderColor: "border-amber-500",
       sponsors: [
         {
-          name: "Robotics Unlimited",
-          logo: "/placeholder-logo.png",
-          website: "https://roboticsunlimited.com"
+          name: "Vicentijevic Family",
+          logo: "/sponsors/vicentijevic.png",
+          website: "https://www.vicentijevic.ca"
         },
         {
-          name: "Local Engineering",
-          logo: "/placeholder-logo.png",
-          website: "https://localengineering.com"
-        },
-        {
-          name: "Community Tech",
-          logo: "/placeholder-logo.png",
-          website: "https://communitytech.com"
-        },
-        {
-          name: "Future Builders",
-          logo: "/placeholder-logo.png",
-          website: "https://futurebuilders.com"
-        },
-        {
-          name: "Innovation Partners",
-          logo: "/placeholder-logo.png",
-          website: "https://innovationpartners.com"
+          name: "Wong Family",
+          logo: "/sponsors/wong.png",
+          website: "https://www.wongfamily.ca"
         }
       ]
     },
@@ -142,38 +122,38 @@ const sponsorsData: SponsorsConfig = {
     //     }
     //   ]
     // },
-    {
-      name: "Past Sponsors",
-      color: "text-gray-500",
-      borderColor: "border-gray-400",
-      sponsors: [
-        {
-          name: "Legacy Robotics",
-          logo: "/placeholder-logo.png",
-          website: "https://legacyrobotics.com"
-        },
-        {
-          name: "Classic Engineering",
-          logo: "/placeholder-logo.png",
-          website: "https://classicengineering.com"
-        },
-        {
-          name: "Heritage Systems",
-          logo: "/placeholder-logo.png",
-          website: "https://heritagesystems.com"
-        },
-        {
-          name: "Vintage Tech",
-          logo: "/placeholder-logo.png",
-          website: "https://vintagetech.com"
-        },
-        {
-          name: "Traditional Solutions",
-          logo: "/placeholder-logo.png",
-          website: "https://traditionalsolutions.com"
-        }
-      ]
-    }
+    // {
+    //   name: "Past Sponsors",
+    //   color: "text-gray-500",
+    //   borderColor: "border-gray-400",
+    //   sponsors: [
+    //     {
+    //       name: "Legacy Robotics",
+    //       logo: "/placeholder-logo.png",
+    //       website: "https://legacyrobotics.com"
+    //     },
+    //     {
+    //       name: "Classic Engineering",
+    //       logo: "/placeholder-logo.png",
+    //       website: "https://classicengineering.com"
+    //     },
+    //     {
+    //       name: "Heritage Systems",
+    //       logo: "/placeholder-logo.png",
+    //       website: "https://heritagesystems.com"
+    //     },
+    //     {
+    //       name: "Vintage Tech",
+    //       logo: "/placeholder-logo.png",
+    //       website: "https://vintagetech.com"
+    //     },
+    //     {
+    //       name: "Traditional Solutions",
+    //       logo: "/placeholder-logo.png",
+    //       website: "https://traditionalsolutions.com"
+    //     }
+    //   ]
+    // }
   ]
 };
 
