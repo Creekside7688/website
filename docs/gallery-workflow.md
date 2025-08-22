@@ -8,7 +8,7 @@ i lowkey generated this with cursor
 npm run convert-webp          # Convert AND optimize images in public/media/
 npm run create-thumbnails     # Generate thumbnails  
 ```
-Configure folders in src/config/gallery-config.ts
+Configure folders in src/config/gallery-config.js
 ```
 npm run generate-gallery      # Update gallery data
 npm run dev                   # Test changes
@@ -20,7 +20,7 @@ Always delete public/media after running the commands.
 
 ### Add New Folder
 ```typescript
-// In src/config/gallery-config.ts
+// In src/config/gallery-config.js
 {
   id: '2024-2025',
   label: '2024/2025',

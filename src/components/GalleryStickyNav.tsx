@@ -28,6 +28,7 @@ interface YearData {
 interface GalleryStickyNavProps {
     yearsData: YearData[];
     activeYear: string;
+    activeSection: string | null;
     onYearChange: (yearId: string) => void;
     onScrollToSection: (sectionId: string) => void;
 }
@@ -35,6 +36,7 @@ interface GalleryStickyNavProps {
 export default function GalleryStickyNav({ 
     yearsData, 
     activeYear, 
+    activeSection,
     onYearChange, 
     onScrollToSection 
 }: GalleryStickyNavProps) {
@@ -103,7 +105,11 @@ export default function GalleryStickyNav({
                                 {activeYearData.rootImages && activeYearData.rootImages.length > 0 && (
                                     <button
                                         onClick={() => onScrollToSection('root')}
-                                        className="text-gray-300 hover:text-white transition-all duration-200 text-sm font-medium border-b-2 border-transparent hover:border-white pb-1"
+                                        className={`transition-all duration-200 text-xs font-medium border-b-2 pb-1 ${
+                                            activeSection === 'root'
+                                                ? 'text-white border-white'
+                                                : 'text-gray-300 hover:text-white border-transparent hover:border-white'
+                                        }`}
                                     >
                                         FEATURED ({activeYearData.rootImages.length})
                                     </button>
@@ -114,7 +120,11 @@ export default function GalleryStickyNav({
                                     <button
                                         key={subfolder.name}
                                         onClick={() => onScrollToSection(subfolder.name)}
-                                        className="text-gray-300 hover:text-white transition-all duration-200 text-sm font-medium border-b-2 border-transparent hover:border-white pb-1"
+                                        className={`transition-all duration-200 text-xs font-medium border-b-2 pb-1 ${
+                                            activeSection === subfolder.name
+                                                ? 'text-white border-white'
+                                                : 'text-gray-300 hover:text-white border-transparent hover:border-white'
+                                        }`}
                                     >
                                         {subfolder.name} ({subfolder.count})
                                     </button>
@@ -124,7 +134,7 @@ export default function GalleryStickyNav({
                                 {showBackToTop && (
                                     <button
                                         onClick={scrollToTop}
-                                        className="text-gray-300 hover:text-white transition-all duration-200 text-sm font-medium border-b-2 border-transparent hover:border-white pb-1 flex items-center gap-2"
+                                        className="text-gray-300 hover:text-white transition-all duration-200 text-xs font-medium border-b-2 border-transparent hover:border-white pb-1 flex items-center gap-2"
                                     >
                                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
@@ -179,7 +189,11 @@ export default function GalleryStickyNav({
                                 {activeYearData.rootImages && activeYearData.rootImages.length > 0 && (
                                     <button
                                         onClick={() => onScrollToSection('root')}
-                                        className="text-gray-300 hover:text-white transition-all duration-200 text-sm font-medium border-b-2 border-transparent hover:border-white pb-1"
+                                        className={`transition-all duration-200 text-xs font-medium border-b-2 pb-1 ${
+                                            activeSection === 'root'
+                                                ? 'text-white border-white'
+                                                : 'text-gray-300 hover:text-white border-transparent hover:border-white'
+                                        }`}
                                     >
                                         Featured ({activeYearData.rootImages.length})
                                     </button>
@@ -190,7 +204,11 @@ export default function GalleryStickyNav({
                                     <button
                                         key={subfolder.name}
                                         onClick={() => onScrollToSection(subfolder.name)}
-                                        className="text-gray-300 hover:text-white transition-all duration-200 text-sm font-medium border-b-2 border-transparent hover:border-white pb-1"
+                                        className={`transition-all duration-200 text-xs font-medium border-b-2 pb-1 ${
+                                            activeSection === subfolder.name
+                                                ? 'text-white border-white'
+                                                : 'text-gray-300 hover:text-white border-transparent hover:border-white'
+                                        }`}
                                     >
                                         {subfolder.name} ({subfolder.count})
                                     </button>
@@ -200,7 +218,7 @@ export default function GalleryStickyNav({
                                 {showBackToTop && (
                                     <button
                                         onClick={scrollToTop}
-                                        className="text-gray-300 hover:text-white transition-all duration-200 text-sm font-medium border-b-2 border-transparent hover:border-white pb-1 flex items-center gap-2"
+                                        className="text-gray-300 hover:text-white transition-all duration-200 text-xs font-medium border-b-2 border-transparent hover:border-white pb-1 flex items-center gap-2"
                                     >
                                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />

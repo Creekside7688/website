@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import GalleryStickyNav from '../../components/GalleryStickyNav';
 import Image from 'next/image';
-import galleryData from '../../data/gallery-data.json';
+import galleryData from '../../config/gallery-data.json';
 
 interface GalleryImage {
     src: string;
@@ -33,6 +33,7 @@ interface YearData {
 
 export default function Gallery() {
     const [activeYear, setActiveYear] = useState('2024-2025');
+    const [activeSection, setActiveSection] = useState<string | null>(null);
     const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
     const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
     const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -48,7 +49,8 @@ export default function Gallery() {
         const element = sectionRefs.current[sectionId];
         if (element) {
             const navbarHeight = 120; // Account for sticky navbar
-            const elementPosition = element.offsetTop - navbarHeight;
+            const additionalOffset = 80; // Additional space above the element
+            const elementPosition = element.offsetTop - navbarHeight - additionalOffset;
             window.scrollTo({
                 top: elementPosition,
                 behavior: 'smooth'
@@ -84,6 +86,35 @@ export default function Gallery() {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, [lightboxOpen]);
 
+    // Track active section based on scroll position
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const navbarHeight = 120;
+            const additionalOffset = 80;
+            const threshold = navbarHeight + additionalOffset + 100; // Add some buffer
+
+            // Check which section is currently in view
+            let currentSection: string | null = null;
+            
+            Object.entries(sectionRefs.current).forEach(([sectionId, element]) => {
+                if (element) {
+                    const elementTop = element.offsetTop - navbarHeight - additionalOffset;
+                    const elementBottom = elementTop + element.offsetHeight;
+                    
+                    if (scrollY >= elementTop - threshold && scrollY < elementBottom) {
+                        currentSection = sectionId;
+                    }
+                }
+            });
+
+            setActiveSection(currentSection);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [activeYear]);
+
     // Get active year data
     const activeYearData = yearsData.find(year => year.id === activeYear);
 
@@ -107,6 +138,7 @@ export default function Gallery() {
             <GalleryStickyNav
                 yearsData={yearsData}
                 activeYear={activeYear}
+                activeSection={activeSection}
                 onYearChange={setActiveYear}
                 onScrollToSection={scrollToSection}
             />

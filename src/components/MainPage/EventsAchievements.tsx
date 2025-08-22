@@ -1,7 +1,7 @@
 'use client';
 
-import upcomingEvents from '../../data/upcoming-events';
-import achievements from '../../data/achievements';
+import upcomingEvents from '../../config/upcoming-events';
+import achievements from '../../config/achievements';
 
 export default function EventsAchievements() {
     return (
@@ -13,25 +13,13 @@ export default function EventsAchievements() {
                     {/* Upcoming Events */}
                     <div>
                         <h3 className="text-2xl font-bold mb-4 text-center lg:text-left text-white">Upcoming Events</h3>
-                        <div className="space-y-6">
+                        <div className="h-[500px] overflow-y-auto space-y-6 border-2 border-gray-500 rounded-lg p-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                             {upcomingEvents.map((event, index) => (
-                                <div key={index} className="p-6 rounded bg-[#2a3441] border border-gray-700">
-                                    <div className="flex justify-between items-center">
-                                        <div>
-                                            <h4 className="text-xl font-semibold mb-2">{event.title}</h4>
-                                            <p className="text-gray-300 mb-2">{event.date}</p>
-                                            <p className="text-gray-400">Location: {event.location}</p>
-                                        </div>
-                                        {event.actionType === 'button' ? (
-                                            <button className="px-6 py-3 bg-white text-gray-900 hover:bg-gray-100 rounded font-semibold transition-colors duration-200">
-                                                {event.action}
-                                            </button>
-                                        ) : (
-                                            <span className={`font-medium ${event.action === 'Open' ? 'text-white' : 'text-gray-500'
-                                                }`}>
-                                                {event.action}
-                                            </span>
-                                        )}
+                                <div key={index} className="p-6 rounded bg-[#2a3441] border border-gray-700 hover:scale-105 transition-transform duration-200 cursor-pointer">
+                                    <div>
+                                        <h4 className="text-xl font-semibold mb-2">{event.title}</h4>
+                                        <p className="text-gray-300 mb-2">{event.date}</p>
+                                        <p className="text-gray-400">{event.location}</p>
                                     </div>
                                 </div>
                             ))}
@@ -40,18 +28,14 @@ export default function EventsAchievements() {
 
                     {/* Past Achievements */}
                     <div>
-                        <h3 className="text-2xl font-bold mb-8 text-center lg:text-left text-white">Past Achievements</h3>
-                        <div className="space-y-6">
+                        <h3 className="text-2xl font-bold mb-4 text-center lg:text-left text-white">Past Achievements</h3>
+                        <div className="h-[500px] overflow-y-auto space-y-6 border-2 border-gray-500 rounded-lg p-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                             {achievements.map((achievement, index) => (
-                                <div key={index} className="p-6 rounded bg-[#2a3441] border border-gray-700">
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
-                                            <span className="text-gray-900 font-bold">{achievement.icon}</span>
-                                        </div>
-                                        <div>
-                                            <h4 className="text-xl font-semibold mb-2">{achievement.title}</h4>
-                                            <p className="text-gray-300">{achievement.description}</p>
-                                        </div>
+                                <div key={index} className="p-6 rounded bg-[#2a3441] border border-gray-700 hover:scale-105 transition-transform duration-200 cursor-pointer">
+                                    <div>
+                                        <h4 className="text-xl font-semibold mb-2">{achievement.title}</h4>
+                                        <p className="text-gray-300 mb-2">{achievement.year}</p>
+                                        <p className="text-gray-400">{achievement.description}</p>
                                     </div>
                                 </div>
                             ))}

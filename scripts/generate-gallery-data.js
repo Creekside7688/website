@@ -3,12 +3,12 @@ const fs = require('fs');
 const path = require('path');
 
 // Import the gallery configuration
-const { galleryConfig } = require('./gallery-config.js');
+const { galleryConfig } = require('../src/config/gallery-config.js');
 
 // Configuration
 const thumbnailPath = path.join(__dirname, '../public/media-thumbnails');
 const fullSizePath = path.join(__dirname, '../public/media-converted');
-const outputPath = path.join(__dirname, '../src/data/gallery-data.json');
+const outputPath = path.join(__dirname, '../src/config/gallery-data.json');
 
 function generateGalleryData() {
     console.log('🖼️  Generating gallery data...');

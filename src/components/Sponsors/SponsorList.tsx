@@ -1,5 +1,5 @@
 import SponsorTier from './SponsorTier';
-import sponsorData from '../../data/sponsors';
+import sponsorData from '../../config/sponsors';
 
 interface SponsorListProps {
     title?: string;

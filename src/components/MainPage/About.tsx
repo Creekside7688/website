@@ -1,6 +1,6 @@
 'use client';
 
-import activities from '../../data/activities';
+import activities from '../../config/activities';
 import Image from 'next/image';
 
 export default function About() {

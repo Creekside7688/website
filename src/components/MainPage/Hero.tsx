@@ -35,12 +35,12 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Logo */}
                 <div className="hidden lg:flex items-center justify-center mr-16 lg:mr-24">
-                    <img 
-                        src="/cr-logo.svg" 
-                        alt="Creekside Robotics Logo" 
+                    <img
+                        src="/cr-logo.svg"
+                        alt="Creekside Robotics Logo"
                         className="w-96 h-96 object-contain"
                     />
                 </div>
