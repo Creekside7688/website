@@ -35,6 +35,30 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </div>
+                        <div className="mt-6">
+                            <a href="https://www.thebluealliance.com/team/7688" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-500 hover:text-blue-400 transition-colors text-sm">
+                                <div>
+                                    <svg width="72" height="112" viewBox="0 0 72 112" fill="none" className="w-6 h-6" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_6641_2)">
+                                            <path d="M11 20V84" stroke="currentColor" strokeWidth="6" strokeMiterlimit="10" />
+                                            <path d="M61 20V84" stroke="currentColor" strokeWidth="6" strokeMiterlimit="10" />
+                                            <path d="M11 84C11 90.6304 13.6339 96.9893 18.3223 101.678C23.0107 106.366 29.3696 109 36 109" stroke="currentColor" strokeWidth="6" strokeMiterlimit="10" />
+                                            <path d="M61 84C61 90.6304 58.3661 96.9893 53.6777 101.678C48.9893 106.366 42.6304 109 36 109" stroke="currentColor" strokeWidth="6" strokeMiterlimit="10" />
+                                            <path d="M36 20V109" stroke="currentColor" strokeWidth="6" strokeMiterlimit="10" />
+                                            <path d="M11 81H61" stroke="currentColor" strokeWidth="6" strokeMiterlimit="10" />
+                                            <path d="M11 53H61" stroke="currentColor" strokeWidth="6" strokeMiterlimit="10" />
+                                            <path d="M68 0H4C1.79086 0 0 1.79086 0 4V24C0 26.2091 1.79086 28 4 28H68C70.2091 28 72 26.2091 72 24V4C72 1.79086 70.2091 0 68 0Z" fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6641_2">
+                                                <rect width="72" height="112" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span>The Blue Alliance</span>
+                            </a>
+                        </div>
                     </div>
 
                     {/* Contact Info */}
@@ -53,6 +77,7 @@ export default function Footer() {
                                 </svg>
                                 <span>@byrnerobotics</span>
                             </a>
+
                             <a href="https://maps.app.goo.gl/GTH3pURAqUyAGr3EA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-blue-400 transition-colors">
                                 <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />

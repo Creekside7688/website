@@ -19,13 +19,13 @@ export default function About() {
                         <div>
                             <h3 className="text-3xl font-bold mb-4 text-white">FIRST Robotics Competition</h3>
                             <p className="text-lg text-gray-300 mb-4">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                “The Ultimate Sport for the Mind”
                             </p>
                             <p className="text-lg text-gray-300 mb-4">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Every year we participate in the <i><b>FIRST</b></i> Robotics Competition. We have just 8 weeks to design, build, and program a 150 lbs robot to compete in a new game.
                             </p>
                             <p className="text-lg text-gray-300">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Students are exposed to a wide variety of skills, and FRC prepares them for careers in STEM while equipping them with the necessary soft skills to thrive.
                             </p>
                         </div>
                     </div>
